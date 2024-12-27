@@ -11,7 +11,13 @@ This repository contains two mobile applications developed as part of our Androi
 
 ## Team Members  
 - Maysara Zarioh (Team Leader)
-  
+- Wail AOURRAM 
+- Youssef AGRA
+- Sabir ElKADARI
+- Ayoub ERRECHAKI
+- Ali lAGHZAOUI
+- Mohamed Yassine BOUKHRICHN
+
  
 
 ## How to Run  
