@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/quiz_background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon"
+        android:contentDescription="Insert image here" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#9F7CFF"
+        app:hintTextColor="#B39DFF"
+        android:textColorHint="#FFFFFF"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#9F7CFF"
+        app:hintTextColor="#B39DFF"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#FFFFFF"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LOGIN"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#7C4DFF"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN UP"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#5C35CC"/>
+
+</LinearLayout>
