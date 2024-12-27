@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_background"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        android:hint="Height (cm)"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textColor="@color/edittext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        android:hint="Weight (kg)"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textColor="@color/edittext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI: --"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCalculateBMI"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Calculate BMI"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:icon="@drawable/ic_calculate"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/accent_green"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBMIChart"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="BMI Chart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/secondary_button" />
+
+</LinearLayout>
